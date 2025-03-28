@@ -8,21 +8,45 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Alee's Ear Training - Vox Chord Recognition (Test 1) </h1>
-        <img src="images/music-note.png" alt="Music Note"> <!-- Add an image -->
-        <button id="playChord">🎹 Play Chord</button>
-        <button id="prevChord">⬅</button>
-        <button id="nextChord">➡</button>
+    <div class="main-container">
+        <!-- Quiz Section -->
+        <div class="quiz-container">
+            <h1>Alee's Ear Training - Chord Recognition Project (v2)</h1>
+            <select id="quizSelect">
+                <option value="quiz1">Vox Continental Chord Recognition </option>
+                <option value="quiz2">Oberheim Chord Recognition</option>
+                <option value="quiz3">DX7 Chord Recognition</option>
+                <option value="quiz4">Piano Chord Recognition</option>
+                <option value="quiz5">Yamaha YC-45D Chord Recognition</option>
+                <option value="quiz6">Crumar Orchestrator Recognition</option>
+            </select>
+            <img id="quizImage" src="images/music-note.png" alt="Music Note"> 
 
-        <div class="options">
-            <p>Which chord was played?</p>
-            <button class="option-btn" onclick="checkAnswer(0)">E Major</button>
-            <button class="option-btn" onclick="checkAnswer(1)">C Major</button>
-            <button class="option-btn" onclick="checkAnswer(2)">G Major</button>
+            <button id="playChord">🎹 Play Chord</button>
+            <button id="prevChord">⬅</button>
+            <button id="nextChord">➡</button>
+
+            <div class="options">
+                <p>Which chord was played?</p>
+                <button class="option-btn" onclick="checkAnswer(0)">E Major</button>
+                <button class="option-btn" onclick="checkAnswer(1)">C Major</button>
+                <button class="option-btn" onclick="checkAnswer(2)">G Major</button>
+            </div>
+
+            <p id="result"></p>
+
+            <!-- Progress Bar -->
+            <progress id="progressBar" value="0" max="100"></progress>
         </div>
 
-        <p id="result"></p>
+        <!-- About Section -->
+        <div class="about-section">
+            <h2>Purpose of the Project</h2>
+            <p>Welcome to Alee's Ear Training! I made this quiz help me recognize different chord types that come from various sounds. Some sounds can make it hard to hear the chord as they have different qualities.</p>
+            <p>Select a quiz from the dropdown menu and press "Play Chord" to hear a chord. Try to identify the correct chord from the given options!</p>
+            <p>Use the progress bar to track your improvement as you go!</p>
+            <p>🎧 Have fun!</p>
+        </div>
     </div>
 </body>
 </html>
