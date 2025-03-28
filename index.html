@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ear Training</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Alee's Ear Training - Vox Chord Recognition (Test 1) </h1>
+        <img src="images/music-note.png" alt="Music Note"> <!-- Add an image -->
+        <button id="playChord">🎹 Play Chord</button>
+        <button id="prevChord">⬅</button>
+        <button id="nextChord">➡</button>
+
+        <div class="options">
+            <p>Which chord was played?</p>
+            <button class="option-btn" onclick="checkAnswer(0)">E Major</button>
+            <button class="option-btn" onclick="checkAnswer(1)">C Major</button>
+            <button class="option-btn" onclick="checkAnswer(2)">G Major</button>
+        </div>
+
+        <p id="result"></p>
+    </div>
+</body>
+</html>
